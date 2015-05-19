@@ -12,3 +12,8 @@
   <strong>Author:</strong>
   <%= @article.author %>
 </p>
+
+<button>
+<%= link_to "remove", article_path(@article), data: {confirm: 'Are you sure?'}, method: :delete %>
+</button>
+
